@@ -1,0 +1,119 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #ffefba, #ffffff); /* Soft gradient background */
+}
+
+.header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Vibrant gradient */
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 1em 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff7e5f;
+}
+
+.content {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: #ff7e5f;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    font-size: 1.2em;
+    padding: 0.5em;
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 0.7em 1.5em;
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #feb47b;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content section {
+    animation: fadeInUp 0.6s ease-in-out;
+}
